@@ -10,16 +10,10 @@ html {
 }
 
 body{
-  background-image: url(../assets/images/blurred_backgrounds/blur_bg_3.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
   font-family: 'Open Sans';
   color: #fff;
   min-height: 100%;
   background-color: rgb(58,23,63);
-  padding-bottom: 200px;
 }
 
 .navbar {
