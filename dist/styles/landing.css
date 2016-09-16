@@ -30,16 +30,19 @@
   position: relative;
   padding: 2rem;
   text-align: center;
-  opacity: 0;
+  opacity: 1;
   transform: scaleX(0.9) translateY(3rem);
   -moz-transform: scaleX(0.9) translateY(3rem);
   -webkit-transform: scaleX(0.9) translateY(3rem);
+/* Checkpoint states to remove however at this time I have commented out to see if
+when I have time to refactor these for a angular approach
   transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
   transition-delay: 0.2s;
   -moz-transition-delay: 0.2s;
-  -webkit-transition-delay: 0.2s;  
+  -webkit-transition-delay: 0.2s;
+*/
 }
 
 .point .point-title {
