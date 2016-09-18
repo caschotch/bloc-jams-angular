@@ -11,7 +11,7 @@
                 url: '/',
                 templateUrl: '/templates/landing.html'
             })
-            .state('collection',{
+            .state('collection', {
                 url: '/collection',
                 templateURL: '/templates/collection.html'
             })
