@@ -20,6 +20,10 @@
                 scope.max = 100;
 
                 var seekBar = $(element);
+                /*
+                * @function percentString
+                * converts percent number to string type
+                */
 
                 var percentString = function() {
                     var value = scope.value;
@@ -30,6 +34,10 @@
 
                 scope.fillStyle = function() {
                     return {width: percentString()};
+                };
+
+                scope.thumbStyle = function() {
+                        return {left: percentString()};
                 };
 
                 scope.onClickSeekBar = function(event) {
@@ -50,8 +58,6 @@
                         $document.unbind('mouseup.thumb');
                     });
                 };
-
-
             }
         };
     }
