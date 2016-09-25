@@ -15,6 +15,10 @@
 
         var currentBuzzObject = null;
 
+        // @desc volume used for songs
+        // @type {Number}
+        SongPlayer.volume = 80;
+
          /*
          * @function setSong
          * @desc Stops currently playing song and loads new audio file as currentBuzzObject
@@ -39,8 +43,6 @@
             });
 
             SongPlayer.currentSong = song;
-
-
 
         };
 
@@ -159,6 +161,13 @@
             if (currentBuzzObject){
                 currentBuzzObject.setTime(time);
             }
+        };
+
+        SongPlayer.setVolume = function(volume){
+            if (currentBuzzObject){
+                currentBuzzObject.setVolume(volume);
+            }
+            SongPlayer.volume = volume;
         };
 
         return SongPlayer;
