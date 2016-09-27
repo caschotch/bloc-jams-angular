@@ -28,7 +28,7 @@
                 <div class="total-time">{{  playerBar.songPlayer.currentSong.length | timecode }}</div>
             </div>
         </div>
-        <div class="control-group volume">
+        <div class="control-group volume"> <!-- ion-volume-mute / will try the extra credit later date -->
             <span class="icon ion-volume-high"></span>
             <seek-bar value="{{ playerBar.songPlayer.volume }}" max=100 on-change="playerBar.songPlayer.setVolume(value)"></seek-bar>
         </div>
